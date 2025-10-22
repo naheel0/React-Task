@@ -1,8 +1,12 @@
-// vite.config.js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/login-page-task/', // <-- replace 'repo-name' with your GitHub repo name
-});
+  plugins: [
+    tailwindcss(), 
+  ],
+  base: '/login-page-task/', // Replace with your actual repository name
+})
+// vite.config.js
+
