@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Link,Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Login from "./login";
 import Signup from "./signup";
@@ -6,7 +6,7 @@ import React from "react";
 
 export default function App() {
   return (
-    <HashRouter  basename="/login-page-task">
+    <HashRouter>
       <nav className="flex items-center justify-center gap-6 py-4 bg-gray-100">
         <Link
           to="/login"

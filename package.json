@@ -1,14 +1,13 @@
 {
   "name": "login-page-task",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://naheel0.github.io/login-page-task",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.15",

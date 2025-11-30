@@ -8,18 +8,11 @@ export default defineConfig({
     tailwindcss(),
     {
       name: 'create-nojekyll',
-      buildStart() {
-        // Create in project root
-        const rootNoJekyll = path.resolve('.nojekyll')
-        if (!fs.existsSync(rootNoJekyll)) {
-          fs.writeFileSync(rootNoJekyll, '')
-        }
-      },
       closeBundle() {
-        // Create in dist folder
+        // Create .nojekyll only in dist folder (for deployment)
         const distNoJekyll = path.resolve('dist', '.nojekyll')
         fs.writeFileSync(distNoJekyll, '')
-        console.log('Created .nojekyll files')
+        console.log('Created .nojekyll file in dist folder')
       }
     }
   ],
