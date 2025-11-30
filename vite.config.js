@@ -6,7 +6,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(), 
   ],
-  base: '/login-page-task/', // Replace with your actual repository name
+  base: '/', 
 })
-// vite.config.js
 

@@ -12,7 +12,7 @@ export default function Login() {
         const svedpassword = localStorage.getItem("password")
 
         if (email === savedname && password === svedpassword) {
-            navigate("/")
+            navigate("/home")
         } else {
             alert("Invalid credentials")
         }
