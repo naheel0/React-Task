@@ -6,7 +6,7 @@ import React from "react";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename="/login-page-task">
       <nav className="flex items-center justify-center gap-6 py-4 bg-gray-100">
         <Link
           to="/login"

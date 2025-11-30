@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(), 
   ],
-  base: '/', 
+  base: '/login-page-task/', 
 })
 
