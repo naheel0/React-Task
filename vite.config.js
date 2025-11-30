@@ -1,17 +1,27 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
-import { fileURLToPath, URL } from 'node:url'
+import fs from 'fs'
+import path from 'path'
 
 export default defineConfig({
-  plugins: [tailwindcss()],
-  base: '/login-page-task/', // your GitHub Pages repo
-
-  build: {
-    rollupOptions: {
-      input: {
-        main: fileURLToPath(new URL('index.html', import.meta.url)),
-        404: fileURLToPath(new URL('index.html', import.meta.url)), // fallback for GitHub Pages
+  plugins: [
+    tailwindcss(),
+    {
+      name: 'create-nojekyll',
+      buildStart() {
+        // Create in project root
+        const rootNoJekyll = path.resolve('.nojekyll')
+        if (!fs.existsSync(rootNoJekyll)) {
+          fs.writeFileSync(rootNoJekyll, '')
+        }
       },
-    },
-  },
+      closeBundle() {
+        // Create in dist folder
+        const distNoJekyll = path.resolve('dist', '.nojekyll')
+        fs.writeFileSync(distNoJekyll, '')
+        console.log('Created .nojekyll files')
+      }
+    }
+  ],
+  base: '/login-page-task/',
 })
