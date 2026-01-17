@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Task/quotes-app/static/css/main.e6c13ad2.css",
+    "main.js": "/React-Task/quotes-app/static/js/main.29d3a3bd.js",
+    "index.html": "/React-Task/quotes-app/index.html",
+    "main.e6c13ad2.css.map": "/React-Task/quotes-app/static/css/main.e6c13ad2.css.map",
+    "main.29d3a3bd.js.map": "/React-Task/quotes-app/static/js/main.29d3a3bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.29d3a3bd.js"
+  ]
+}
