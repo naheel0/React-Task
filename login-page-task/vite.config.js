@@ -9,12 +9,12 @@ export default defineConfig({
     {
       name: 'create-nojekyll',
       closeBundle() {
-        // Create .nojekyll only in dist folder (for deployment)
+        // Create .nojekyll in dist folder for GitHub Pages
         const distNoJekyll = path.resolve('dist', '.nojekyll')
         fs.writeFileSync(distNoJekyll, '')
         console.log('Created .nojekyll file in dist folder')
       }
     }
   ],
-  base: '/login-page-task/',
+  base: '/React-Task/login-page-task/'  // <-- make sure this matches repo/folder
 })
