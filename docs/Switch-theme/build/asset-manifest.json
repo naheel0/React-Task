@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Task/Switch-Theme/static/css/main.450ea818.css",
+    "main.js": "/React-Task/Switch-Theme/static/js/main.1fa99e29.js",
+    "index.html": "/React-Task/Switch-Theme/index.html",
+    "main.450ea818.css.map": "/React-Task/Switch-Theme/static/css/main.450ea818.css.map",
+    "main.1fa99e29.js.map": "/React-Task/Switch-Theme/static/js/main.1fa99e29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.450ea818.css",
+    "static/js/main.1fa99e29.js"
+  ]
+}
