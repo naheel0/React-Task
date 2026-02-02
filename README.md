@@ -1,4 +1,4 @@
- <h1>REACT TASK</h1>
+<h1>REACT TASK</h1>
 
 1. Blog Task
 
@@ -34,3 +34,10 @@ A classic Todo application to add, delete, and manage tasks.
 
 🔗 Live Demo:
 https://naheel0.github.io/React-Task/TODO-APP
+
+6. Traffic Light
+
+A traffic light simulation built with React.
+
+🔗 Live Demo:
+https://naheel0.github.io/React-Task/traffic-light
