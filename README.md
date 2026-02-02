@@ -40,4 +40,4 @@ https://naheel0.github.io/React-Task/TODO-APP
 A traffic light simulation built with React.
 
 🔗 Live Demo:
-https://naheel0.github.io/React-Task/traffic-light
+https://naheel0.github.io/React-Task/traffic%20light
